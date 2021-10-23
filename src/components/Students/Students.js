@@ -8,7 +8,7 @@ export function Students({ title, list = []}) {
             <ul>
                 {
                     list.map((student, index) =>
-                        <li><Student {...student}/></li>)
+                        <li key={index}><Student {...student}/></li>)
                 }
             </ul>
         </>
