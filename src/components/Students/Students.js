@@ -1,6 +1,6 @@
 import { Student } from "../Student/Student";
 
-export function Students({ title, list = []}) {
+export function Students({ title, list = [], add = () => ({})}) {
     return (
         <>
             <h2>Here is the list of {title}</h2>
@@ -8,7 +8,10 @@ export function Students({ title, list = []}) {
             <ul>
                 {
                     list.map((student, index) =>
-                        <li key={index}><Student {...student}/></li>)
+                        <li key={index}>
+                            <Student {...student}
+                                     onClick={() => add(student)}/>
+                        </li>)
                 }
             </ul>
         </>
