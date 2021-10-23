@@ -1,7 +1,12 @@
-export function Student({ name, profession}) {
+import { useState } from "react";
+
+export function Student({ name, profession }) {
+    const [enrolled, setEnrolled] = useState(false);
+
     return (
-        <div>
-            {name} - {profession}
+        <div onClick={() => setEnrolled(!enrolled)}>
+            {name} - {profession} -
+            <>&nbsp;{enrolled ? 'enrolled' : 'pending'}</>
         </div>
     )
 }
