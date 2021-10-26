@@ -1,20 +1,18 @@
-function App() {
+import { Students } from "./components/Students/Students";
+import { students } from "./api/students";
+
+function App(props) {
+  const { course, cohort, instructor, beginner = false} = props;
+  const coursePrefix = beginner ? 'Beginner' : 'Advanced';
+
   return (
     <div className="App">
-      <header className="App-header">
-        Time to learn React!
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <article>
+        <h1>Welcome to { coursePrefix } { course }!</h1>
+        <p>This is cohort number { cohort }.</p>
+        <p>Taught by instructor { instructor }.</p>
+        <Students title="candidates" list={students}/>
+      </article>
     </div>
   );
 }
