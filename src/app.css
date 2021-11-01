@@ -1,0 +1,10 @@
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 32px;
+}
+
+.nav-links > a {
+    margin-top: 16px;
+}
