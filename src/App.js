@@ -1,20 +1,11 @@
+import { Orders } from "./components/Orders";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Time to learn React!
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Welcome to our restaurant menu management!</h2>
+      <h3>List of current orders:</h3>
+      <Orders/>
     </div>
   );
 }
