@@ -7,7 +7,6 @@ export function Orders() {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const onAdd = () => {
-        debugger
         const order = generateOrder();
         dispatch({ type: 'ADD', data: order });
     }

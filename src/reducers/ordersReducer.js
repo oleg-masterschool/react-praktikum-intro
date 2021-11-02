@@ -3,7 +3,6 @@ export const initialState = {
 };
 
 export const reducer = (state, action) => {
-    debugger
     switch (action.type) {
         case 'ADD':
             return { ...state, orders: state.orders.concat([action.data.order]) };

@@ -6,7 +6,7 @@ export function Order(order) {
 
     return (
         <div className="order">
-            <div>Order details</div>
+            <div>Order details - {title}</div>
             <div>Order actions</div>
         </div>
     );
