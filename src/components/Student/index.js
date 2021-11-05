@@ -1,6 +1,15 @@
 import React from "react";
+import styled from 'styled-components';
 import { useParams } from "react-router-dom";
-import './index.css';
+const SMALL_FONT_SIZE = "16px";
+
+export const Paragraph = styled.p`
+  font-size: ${({ small }) => small ? SMALL_FONT_SIZE : "48px"};
+`;
+
+const StudentItem = styled.div`
+  max-width: 80%;
+`;
 
 export const Student = ({ students, cohort }) => {
     // STEP 7 - we need to find a student out of all the students, using the id from the URL
@@ -13,11 +22,11 @@ export const Student = ({ students, cohort }) => {
     const { image, name, profession } = student;
 
     return (
-        <div className="student-item">
+        <StudentItem>
             <img src={process.env.PUBLIC_URL + image} alt={name}/>
-            <p>Name: {name}</p>
-            <p>profession: {profession}</p>
-            <p>cohort: { cohort }</p>
-        </div>
+            <Paragraph>Name: {name}</Paragraph>
+            <Paragraph>profession: {profession}</Paragraph>
+            <Paragraph>cohort: { cohort }</Paragraph>
+        </StudentItem>
     );
 }
