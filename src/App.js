@@ -33,6 +33,7 @@ function App(props) {
         <h1>Welcome to { coursePrefix } { course }!</h1>
         <p>This is cohort number { cohort }.</p>
         <p>Taught by instructor { instructor }.</p>
+        <p>The best course ever.</p>
         <Students title="candidates" list={candidates} editStudent={editStudent}/>
         <Students title="enrolled" list={enrolled} editStudent={editStudent}/>
       </article>
