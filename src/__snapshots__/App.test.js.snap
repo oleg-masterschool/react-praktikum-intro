@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot should render the app 1`] = `
+<div
+  className="App"
+>
+  <article>
+    <h1>
+      Welcome to 
+      Advanced
+       
+      !
+    </h1>
+    <p>
+      This is cohort number 
+      .
+    </p>
+    <p>
+      Taught by instructor 
+      .
+    </p>
+    <p>
+      The best course ever.
+    </p>
+    <h2>
+      Here is the list of 
+      candidates
+    </h2>
+    <div>
+      Name - Profession
+    </div>
+    <ul>
+      <li>
+        <div
+          className="student"
+          onClick={[Function]}
+        >
+          Jerry Seinfeld
+           - 
+          stand-up comedian
+           -
+           
+          pending
+        </div>
+      </li>
+      <li>
+        <div
+          className="student"
+          onClick={[Function]}
+        >
+          Cosmo Kramer
+           - 
+          Kramerica Industries
+           -
+           
+          pending
+        </div>
+      </li>
+      <li>
+        <div
+          className="student"
+          onClick={[Function]}
+        >
+          Elaine Benes
+           - 
+          writer
+           -
+           
+          pending
+        </div>
+      </li>
+      <li>
+        <div
+          className="student"
+          onClick={[Function]}
+        >
+          George Constanza
+           - 
+          realtor
+           -
+           
+          pending
+        </div>
+      </li>
+    </ul>
+    <h2>
+      Here is the list of 
+      enrolled
+    </h2>
+    <div>
+      Name - Profession
+    </div>
+    <ul />
+  </article>
+</div>
+`;
