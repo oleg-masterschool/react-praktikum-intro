@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export const List = ({ students }) => {
     // Grab the current URL using the hook
+    // test
     return (
         <div className="students-list">
             {students.map(student => (
